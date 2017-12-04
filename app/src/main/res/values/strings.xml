@@ -35,5 +35,21 @@
     <string name="bottomapp_txt1">iWallet bleh blah ipsum lorem ip</string>
     <string name="bottomapp_txt2">More ipsum blah bleh copyright</string>
     <string name="btn_submit">Submit</string>
-    <string name="img_desc">Holder</string> <!--Will change after prototype-->
+    <string name="sec_inf1">Security Status</string>
+    <string name="sec_inf2">not fully secured</string>
+    <string name="sec_checkbox">secure check</string>
+    <string name="sec_pass1">Password</string>
+    <string name="sec_pass2">Unique Code</string>
+    <string name="sec_fing">Biometric</string>
+    <string name="sec_fingL">Registered Finger</string>
+    <string name="sec_fingV">Last updated 28/11/2017</string>
+    <string name="button_return">Return to hub</string>
+    <string name="img_desc">Holder</string>
+    <!--<string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>-->
 </resources>

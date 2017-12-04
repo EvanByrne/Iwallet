@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_security"
     android:layout_width="match_parent"
@@ -9,5 +10,198 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.evan.iwallet.SecurityActivity">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:contentDescription="@string/img_desc"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imBtnProfileSec" />
+
+    <TextView
+        android:text="@string/cardinf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imBtnProfileSec"
+        android:layout_toEndOf="@+id/imBtnProfileSec"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="13dp"
+        android:id="@+id/txtVcardInfClickSec" />
+
+    <TextView
+        android:text="@string/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtVsettingsClickSec"
+        android:layout_alignBaseline="@+id/txtVsecurityClickSec"
+        android:layout_alignBottom="@+id/txtVsecurityClickSec"
+        android:layout_toRightOf="@+id/txtVsecurityClickSec"
+        android:layout_toEndOf="@+id/txtVsecurityClickSec"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp" />
+
+    <Button
+        android:text="@string/button_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVcardInfClickSec"
+        android:layout_alignLeft="@+id/txtVcardInfClickSec"
+        android:layout_alignStart="@+id/txtVcardInfClickSec"
+        android:id="@+id/btnReturnSec"
+        android:layout_alignRight="@+id/txtVsettingsClickSec"
+        android:layout_alignEnd="@+id/txtVsettingsClickSec"
+        android:layout_above="@+id/txtVsecInf1" />
+
+    <TextView
+        android:text="@string/userp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_below="@+id/imBtnProfileSec"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/txtVprofSec"
+        android:layout_alignRight="@+id/imBtnProfileSec"
+        android:layout_alignEnd="@+id/imBtnProfileSec" />
+
+    <TextView
+        android:text="@string/sec_inf1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVprofSec"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="34dp"
+        android:id="@+id/txtVsecInf1" />
+
+    <CheckBox
+        android:text="@string/sec_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkBsecurity"
+        android:layout_alignBaseline="@+id/txtVsecInf1"
+        android:layout_alignBottom="@+id/txtVsecInf1"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/sec_inf2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/txtVsecInf2"
+        android:layout_alignBaseline="@+id/chkBsecurity"
+        android:layout_alignBottom="@+id/chkBsecurity"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="@string/sec_pass1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chkBsecurity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp"
+        android:id="@+id/txtVsecPass" />
+
+    <TextView
+        android:text="@string/sec_pass2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/txtVsecPass2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_passwholder"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_alignTop="@+id/txtVsecPass2"
+        android:layout_alignLeft="@+id/btnReturnSec"
+        android:layout_alignStart="@+id/btnReturnSec"
+        android:id="@+id/editText2" />
+
+    <TextView
+        android:text="@string/sec_fing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:id="@+id/txtVsecFing" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_add"
+        android:contentDescription="@string/img_desc"
+        android:layout_below="@+id/txtVsecFing"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/imBtnSecFing" />
+
+    <TextView
+        android:text="@string/sec_fingL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imBtnSecFing"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/txtVsecFingList" />
+
+    <TextView
+        android:text="@string/sec_fingV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVsecFingList"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/txtVsecFingView" />
+
+    <TextView
+        android:text="@string/bottomapp_txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtVsecFoot2" />
+
+    <TextView
+        android:text="@string/bottomapp_txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtVsecFoot2"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtVsecFoot1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_passwholder"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_alignTop="@+id/txtVsecPass"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2" />
+
+    <TextView
+        android:text="@string/security"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtVsecurityClickSec"
+        android:layout_above="@+id/btnReturnSec"
+        android:layout_alignRight="@+id/chkBsecurity"
+        android:layout_alignEnd="@+id/chkBsecurity" />
 
 </RelativeLayout>

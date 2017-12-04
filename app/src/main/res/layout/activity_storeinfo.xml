@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_storeinfo"
     android:layout_width="match_parent"
@@ -10,4 +11,67 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.evan.iwallet.StoreinfoActivity">
 
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:contentDescription="@string/img_desc"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imBtnProfileSt" />
+
+    <TextView
+        android:text="@string/cardinf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imBtnProfileSt"
+        android:layout_toEndOf="@+id/imBtnProfileSt"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="14dp"
+        android:id="@+id/txtVcardInfClickSt" />
+
+    <TextView
+        android:text="@string/security"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtVcardInfClickSt"
+        android:layout_toRightOf="@+id/txtVcardInfClickSt"
+        android:layout_toEndOf="@+id/txtVcardInfClickSt"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:id="@+id/txtVsecurityClickSt" />
+
+    <TextView
+        android:text="@string/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtVsecurityClickSt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"
+        android:id="@+id/txtVsettingsClickSt" />
+
+    <TextView
+        android:text="@string/userp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imBtnProfileSt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/txtVprofSt" />
+
+    <Button
+        android:text="@string/button_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtVprofSt"
+        android:layout_alignLeft="@+id/txtVcardInfClickSt"
+        android:layout_alignStart="@+id/txtVcardInfClickSt"
+        android:id="@+id/btnReturnSt"
+        android:layout_alignRight="@+id/txtVsettingsClickSt"
+        android:layout_alignEnd="@+id/txtVsettingsClickSt" />
 </RelativeLayout>

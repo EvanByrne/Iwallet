@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_cardinfo"
     android:layout_width="match_parent"
@@ -10,4 +11,68 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.evan.iwallet.CardinfoActivity">
 
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:contentDescription="@string/img_desc"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imBtnProfileCar" />
+
+    <TextView
+        android:text="@string/cardinf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imBtnProfileCar"
+        android:layout_toEndOf="@+id/imBtnProfileCar"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="18dp"
+        android:id="@+id/txtVcardInfClickCar" />
+
+    <TextView
+        android:text="@string/security"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtVcardInfClickCar"
+        android:layout_toRightOf="@+id/txtVcardInfClickCar"
+        android:layout_toEndOf="@+id/txtVcardInfClickCar"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:id="@+id/txtVsecurityClickCar" />
+
+    <TextView
+        android:text="@string/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtVsecurityClickCar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/txtVsettingsClickCar" />
+
+    <TextView
+        android:text="@string/userp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imBtnProfileCar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/txtVprofCar" />
+
+    <Button
+        android:text="@string/button_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVcardInfClickCar"
+        android:layout_alignLeft="@+id/txtVcardInfClickCar"
+        android:layout_alignStart="@+id/txtVcardInfClickCar"
+        android:id="@+id/btnReturnCar"
+        android:layout_alignRight="@+id/txtVsettingsClickCar"
+        android:layout_alignEnd="@+id/txtVsettingsClickCar"
+        android:layout_alignBottom="@+id/txtVprofCar" />
 </RelativeLayout>

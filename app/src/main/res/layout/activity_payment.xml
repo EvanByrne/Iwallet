@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_payment"
     android:layout_width="match_parent"
@@ -10,4 +11,68 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.evan.iwallet.PaymentActivity">
 
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:contentDescription="@string/img_desc"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imBtnProfilePay" />
+
+    <TextView
+        android:text="@string/cardinf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imBtnProfilePay"
+        android:layout_toEndOf="@+id/imBtnProfilePay"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/txtVcardInfClickPay" />
+
+    <TextView
+        android:text="@string/security"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtVcardInfClickPay"
+        android:layout_toRightOf="@+id/txtVcardInfClickPay"
+        android:layout_toEndOf="@+id/txtVcardInfClickPay"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:id="@+id/txtVsecurityClickPay" />
+
+    <TextView
+        android:text="@string/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtVsecurityClickPay"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp"
+        android:id="@+id/txtVsettingsClickPay" />
+
+    <TextView
+        android:text="@string/userp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imBtnProfilePay"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/txtVprofPay" />
+
+    <Button
+        android:text="@string/button_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVcardInfClickPay"
+        android:layout_alignLeft="@+id/txtVcardInfClickPay"
+        android:layout_alignStart="@+id/txtVcardInfClickPay"
+        android:id="@+id/btnReturnPay"
+        android:layout_alignRight="@+id/txtVsettingsClickPay"
+        android:layout_alignEnd="@+id/txtVsettingsClickPay"
+        android:layout_alignBottom="@+id/txtVprofPay" />
 </RelativeLayout>

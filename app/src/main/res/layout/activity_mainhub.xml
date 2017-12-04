@@ -11,27 +11,17 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.evan.iwallet.MainhubActivity">
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/img_desc"
-        app:srcCompat="@mipmap/ic_launcher"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/imBtnProfile" />
-
     <TextView
         android:text="@string/settings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#0000ff"
-        android:layout_alignTop="@+id/txtVsecurityClickable"
-        android:layout_toRightOf="@+id/txtVsecurityClickable"
-        android:layout_toEndOf="@+id/txtVsecurityClickable"
+        android:layout_alignTop="@+id/txtVsecurityClickMh"
+        android:layout_toRightOf="@+id/txtVsecurityClickMh"
+        android:layout_toEndOf="@+id/txtVsecurityClickMh"
         android:layout_marginLeft="19dp"
         android:layout_marginStart="19dp"
-        android:id="@+id/txtVsettingsClickable" />
+        android:id="@+id/txtVsettingsClickMh" />
 
     <TextView
         android:text="@string/cardinf"
@@ -41,10 +31,10 @@
         android:layout_marginLeft="27dp"
         android:layout_marginStart="27dp"
         android:layout_marginTop="15dp"
-        android:id="@+id/tctVcardInfClickable"
+        android:id="@+id/txtVcardInfClickMh"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/imBtnProfile"
-        android:layout_toEndOf="@+id/imBtnProfile" />
+        android:layout_toRightOf="@+id/imBtnProfileMh"
+        android:layout_toEndOf="@+id/imBtnProfileMh" />
 
     <TextView
         android:text="@string/security"
@@ -53,20 +43,20 @@
         android:textColor="#0000ff"
         android:layout_marginLeft="19dp"
         android:layout_marginStart="19dp"
-        android:id="@+id/txtVsecurityClickable"
-        android:layout_alignBaseline="@+id/tctVcardInfClickable"
-        android:layout_alignBottom="@+id/tctVcardInfClickable"
-        android:layout_toRightOf="@+id/tctVcardInfClickable"
-        android:layout_toEndOf="@+id/tctVcardInfClickable" />
+        android:id="@+id/txtVsecurityClickMh"
+        android:layout_alignBaseline="@+id/txtVcardInfClickMh"
+        android:layout_alignBottom="@+id/txtVcardInfClickMh"
+        android:layout_toRightOf="@+id/txtVcardInfClickMh"
+        android:layout_toEndOf="@+id/txtVcardInfClickMh" />
 
     <TextView
         android:text="@string/userp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imBtnProfile"
+        android:layout_below="@+id/imBtnProfileMh"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/txtVprof" />
+        android:id="@+id/txtVprofMh" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -75,9 +65,9 @@
         app:srcCompat="@android:drawable/btn_dialog"
         android:layout_marginTop="24dp"
         android:id="@+id/imBtnPayment"
-        android:layout_below="@+id/txtVprof"
-        android:layout_toLeftOf="@+id/tctVcardInfClickable"
-        android:layout_toStartOf="@+id/tctVcardInfClickable" />
+        android:layout_below="@+id/txtVprofMh"
+        android:layout_toLeftOf="@+id/txtVcardInfClickMh"
+        android:layout_toStartOf="@+id/txtVcardInfClickMh" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -85,8 +75,8 @@
         android:contentDescription="@string/img_desc"
         app:srcCompat="@android:drawable/btn_dialog"
         android:layout_alignBottom="@+id/imBtnPayment"
-        android:layout_alignLeft="@+id/tctVcardInfClickable"
-        android:layout_alignStart="@+id/tctVcardInfClickable"
+        android:layout_alignLeft="@+id/txtVcardInfClickMh"
+        android:layout_alignStart="@+id/txtVcardInfClickMh"
         android:layout_marginLeft="25dp"
         android:layout_marginStart="25dp"
         android:id="@+id/imBtnBudget" />
@@ -211,16 +201,16 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/txtVpageFoot2" />
+        android:id="@+id/txtVmainHfoot2" />
 
     <TextView
         android:text="@string/bottomapp_txt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/txtVpageFoot2"
-        android:layout_alignRight="@+id/txtVpageFoot2"
-        android:layout_alignEnd="@+id/txtVpageFoot2"
-        android:id="@+id/txtVpageFoot1" />
+        android:layout_above="@+id/txtVmainHfoot2"
+        android:layout_alignRight="@+id/txtVmainHfoot2"
+        android:layout_alignEnd="@+id/txtVmainHfoot2"
+        android:id="@+id/txtVmainHFoot1" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -229,8 +219,8 @@
         app:srcCompat="@android:drawable/btn_dialog"
         android:id="@+id/imBtnID"
         android:layout_above="@+id/lblID"
-        android:layout_alignLeft="@+id/txtVsettingsClickable"
-        android:layout_alignStart="@+id/txtVsettingsClickable" />
+        android:layout_alignLeft="@+id/txtVsettingsClickMh"
+        android:layout_alignStart="@+id/txtVsettingsClickMh" />
 
     <TextView
         android:text="@string/mainhub_impdates"
@@ -238,8 +228,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/lblImpDates"
         android:layout_below="@+id/imBtnImpDates"
-        android:layout_toRightOf="@+id/txtVsecurityClickable"
-        android:layout_toEndOf="@+id/txtVsecurityClickable" />
+        android:layout_toRightOf="@+id/txtVsecurityClickMh"
+        android:layout_toEndOf="@+id/txtVsecurityClickMh" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -248,8 +238,8 @@
         app:srcCompat="@android:drawable/btn_dialog"
         android:id="@+id/imBtnVouchers"
         android:layout_above="@+id/lblStoreInf"
-        android:layout_alignRight="@+id/txtVsettingsClickable"
-        android:layout_alignEnd="@+id/txtVsettingsClickable" />
+        android:layout_alignRight="@+id/txtVsettingsClickMh"
+        android:layout_alignEnd="@+id/txtVsettingsClickMh" />
 
     <TextView
         android:text="@string/mainhub_id"
@@ -257,7 +247,17 @@
         android:layout_height="wrap_content"
         android:id="@+id/lblID"
         android:layout_below="@+id/imBtnBudget"
-        android:layout_toRightOf="@+id/txtVsecurityClickable"
-        android:layout_toEndOf="@+id/txtVsecurityClickable" />
+        android:layout_toRightOf="@+id/txtVsecurityClickMh"
+        android:layout_toEndOf="@+id/txtVsecurityClickMh" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/img_desc"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/imBtnProfileMh"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
