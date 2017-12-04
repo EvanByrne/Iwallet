@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.evan.iwallet.SignupActivity">
+
+    <TextView
+        android:text="@string/sup_welcome"
+        android:textSize="72px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/welcMsg" />
+
+    <TextView
+        android:text="@string/sup_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tVmsg"
+        android:layout_below="@+id/welcMsg"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_below="@+id/tVmsg"
+        android:layout_toLeftOf="@+id/welcMsg"
+        android:layout_marginTop="16dp"
+        android:id="@+id/iBgoog" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_alignBottom="@+id/iBgoog"
+        android:layout_toRightOf="@+id/welcMsg"
+        android:layout_toEndOf="@+id/welcMsg"
+        android:id="@+id/iBfb" />
+
+    <TextView
+        android:text="@string/sup_or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iBgoog"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tVor" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/sup_username"
+        android:background="@color/colorPrimary"
+        android:ems="10"
+        android:layout_below="@+id/tVor"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/eTusern" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_below="@+id/eTusern"
+        android:background="@color/colorPrimary"
+        android:layout_alignLeft="@+id/eTusern"
+        android:layout_alignStart="@+id/eTusern"
+        android:layout_marginTop="17dp"
+        android:id="@+id/eTemail"
+        android:text="@string/sup_email" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/eTemail"
+        android:layout_alignRight="@+id/eTemail"
+        android:background="@color/colorPrimary"
+        android:layout_alignEnd="@+id/eTemail"
+        android:layout_marginTop="12dp"
+        android:id="@+id/eTpassw"
+        android:text="@string/sup_passw" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/eTpassw"
+        android:background="@color/colorPrimary"
+        android:layout_alignRight="@+id/eTpassw"
+        android:layout_alignEnd="@+id/eTpassw"
+        android:layout_marginTop="11dp"
+        android:id="@+id/eTcpassw"
+        android:text="@string/sup_cpassw" />
+
+    <TextView
+        android:text="@string/sup_message2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eTcpassw"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:id="@+id/tVmsg2" />
+
+    <TextView
+        android:text="@string/sup_message3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tVmsg2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:id="@+id/tVmsg3" />
+
+    <TextView
+        android:text="@string/sup_message4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tVmsg3"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="14dp"
+        android:id="@+id/tVmsg4" />
+</RelativeLayout>

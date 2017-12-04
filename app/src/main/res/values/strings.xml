@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Iwallet</string>
+    <string name="sup_welcome">Welcome!</string>
+    <string name="sup_message">New User? Please sign up below</string>
+    <string name="sup_username">Username</string>
+    <string name="sup_email">Email</string>
+    <string name="sup_passw">Password</string>
+    <string name="sup_cpassw">Confirm Password</string>
+    <string name="sup_message2">Already a member?</string>
+    <string name="sup_message3">Skip straight to the</string>
+    <string name="sup_message4">Login menu</string>
+    <string name="sup_or">OR</string>
+    <!--<string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>-->
+</resources>
