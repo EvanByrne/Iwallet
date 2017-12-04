@@ -5,7 +5,7 @@
     android:id="@+id/activity_signup"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
+    android:background="#d3d3d3"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -14,7 +14,8 @@
 
     <TextView
         android:text="@string/sup_welcome"
-        android:textSize="72px"
+        android:textSize="52px"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -23,6 +24,7 @@
 
     <TextView
         android:text="@string/sup_message"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tVmsg"
@@ -49,6 +51,7 @@
 
     <TextView
         android:text="@string/sup_or"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/iBgoog"
@@ -60,7 +63,7 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:text="@string/sup_username"
-        android:background="@color/colorPrimary"
+        android:background="#ffffff"
         android:ems="10"
         android:layout_below="@+id/tVor"
         android:layout_centerHorizontal="true"
@@ -72,7 +75,7 @@
         android:inputType="textEmailAddress"
         android:ems="10"
         android:layout_below="@+id/eTusern"
-        android:background="@color/colorPrimary"
+        android:background="#ffffff"
         android:layout_alignLeft="@+id/eTusern"
         android:layout_alignStart="@+id/eTusern"
         android:layout_marginTop="17dp"
@@ -86,7 +89,7 @@
         android:ems="10"
         android:layout_below="@+id/eTemail"
         android:layout_alignRight="@+id/eTemail"
-        android:background="@color/colorPrimary"
+        android:background="#ffffff"
         android:layout_alignEnd="@+id/eTemail"
         android:layout_marginTop="12dp"
         android:id="@+id/eTpassw"
@@ -98,7 +101,7 @@
         android:inputType="textPassword"
         android:ems="10"
         android:layout_below="@+id/eTpassw"
-        android:background="@color/colorPrimary"
+        android:background="#ffffff"
         android:layout_alignRight="@+id/eTpassw"
         android:layout_alignEnd="@+id/eTpassw"
         android:layout_marginTop="11dp"
@@ -107,29 +110,39 @@
 
     <TextView
         android:text="@string/sup_message2"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/eTcpassw"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="14dp"
-        android:id="@+id/tVmsg2" />
+        android:id="@+id/tVmsg2"
+        android:layout_above="@+id/tVmsg3"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:text="@string/sup_message3"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tVmsg2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp"
-        android:id="@+id/tVmsg3" />
+        android:id="@+id/tVmsg3"
+        android:layout_above="@+id/tVmsg4"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:text="@string/sup_message4"
+        android:textColor="#0000ff"
+        android:textSize="32px"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tVmsg3"
-        android:layout_centerHorizontal="true"
-        android:textColor="@color/colorPrimary"
-        android:layout_marginTop="14dp"
-        android:id="@+id/tVmsg4" />
+        android:id="@+id/tVmsg4"
+        android:layout_marginBottom="84dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="@string/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSubmit"
+        android:layout_below="@+id/eTcpassw"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
