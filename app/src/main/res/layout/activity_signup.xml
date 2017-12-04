@@ -14,7 +14,7 @@
 
     <TextView
         android:text="@string/sup_welcome"
-        android:textSize="52px"
+        android:textSize="28sp"
         android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,6 +24,7 @@
 
     <TextView
         android:text="@string/sup_message"
+        android:textSize="18sp"
         android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -51,6 +52,7 @@
 
     <TextView
         android:text="@string/sup_or"
+        android:textSize="16sp"
         android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -110,6 +112,7 @@
 
     <TextView
         android:text="@string/sup_message2"
+        android:textSize="16sp"
         android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -119,6 +122,7 @@
 
     <TextView
         android:text="@string/sup_message3"
+        android:textSize="16sp"
         android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -129,7 +133,7 @@
     <TextView
         android:text="@string/sup_message4"
         android:textColor="#0000ff"
-        android:textSize="32px"
+        android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tVmsg4"

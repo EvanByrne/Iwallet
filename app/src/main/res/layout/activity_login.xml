@@ -4,10 +4,106 @@
     android:id="@+id/activity_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#d3d3d3"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.evan.iwallet.LoginActivity">
+
+    <TextView
+        android:text="@string/login_welc"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtVwelc"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/login_plslog"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVwelc"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtVplsLog" />
+
+    <TextView
+        android:text="@string/login_lbluser"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVplsLog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:id="@+id/txtVuserN" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:background="#ffffff"
+        android:text="@string/login_userholder"
+        android:ems="10"
+        android:layout_below="@+id/txtVuserN"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtInputUserN" />
+
+    <TextView
+        android:text="@string/login_lblpass"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtInputUserN"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:id="@+id/txtVpassword" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:background="#ffffff"
+        android:text="@string/login_passwholder"
+        android:ems="10"
+        android:layout_below="@+id/txtVpassword"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtInputPassw" />
+
+    <Button
+        android:text="@string/login_btnlog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtInputPassw"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/btnLogin" />
+
+    <TextView
+        android:text="@string/login_forgotuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#0000ff"
+        android:layout_below="@+id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:id="@+id/txtVclickableUsern" />
+
+    <TextView
+        android:text="@string/login_forgotpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#0000ff"
+        android:layout_below="@+id/txtVclickableUsern"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:id="@+id/txtVclickablePassw" />
 
 </RelativeLayout>

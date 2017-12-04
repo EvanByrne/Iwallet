@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_mainhub"
     android:layout_width="match_parent"
@@ -9,5 +10,254 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.evan.iwallet.MainhubActivity">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/img_desc"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imBtnProfile" />
+
+    <TextView
+        android:text="@string/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0000ff"
+        android:layout_alignTop="@+id/txtVsecurityClickable"
+        android:layout_toRightOf="@+id/txtVsecurityClickable"
+        android:layout_toEndOf="@+id/txtVsecurityClickable"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:id="@+id/txtVsettingsClickable" />
+
+    <TextView
+        android:text="@string/cardinf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0000ff"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tctVcardInfClickable"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imBtnProfile"
+        android:layout_toEndOf="@+id/imBtnProfile" />
+
+    <TextView
+        android:text="@string/security"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0000ff"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:id="@+id/txtVsecurityClickable"
+        android:layout_alignBaseline="@+id/tctVcardInfClickable"
+        android:layout_alignBottom="@+id/tctVcardInfClickable"
+        android:layout_toRightOf="@+id/tctVcardInfClickable"
+        android:layout_toEndOf="@+id/tctVcardInfClickable" />
+
+    <TextView
+        android:text="@string/userp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imBtnProfile"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/txtVprof" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/img_desc"
+        app:srcCompat="@android:drawable/btn_dialog"
+        android:layout_marginTop="24dp"
+        android:id="@+id/imBtnPayment"
+        android:layout_below="@+id/txtVprof"
+        android:layout_toLeftOf="@+id/tctVcardInfClickable"
+        android:layout_toStartOf="@+id/tctVcardInfClickable" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/img_desc"
+        app:srcCompat="@android:drawable/btn_dialog"
+        android:layout_alignBottom="@+id/imBtnPayment"
+        android:layout_alignLeft="@+id/tctVcardInfClickable"
+        android:layout_alignStart="@+id/tctVcardInfClickable"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:id="@+id/imBtnBudget" />
+
+    <TextView
+        android:text="@string/mainhub_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imBtnPayment"
+        android:layout_alignLeft="@+id/imBtnPayment"
+        android:layout_alignStart="@+id/imBtnPayment"
+        android:id="@+id/lblPayment" />
+
+    <TextView
+        android:text="@string/mainhub_budget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imBtnBudget"
+        android:layout_alignLeft="@+id/imBtnBudget"
+        android:layout_alignStart="@+id/imBtnBudget"
+        android:id="@+id/lblBudget" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/img_desc"
+        app:srcCompat="@android:drawable/btn_dialog"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/imBtnPayment"
+        android:layout_alignEnd="@+id/imBtnPayment"
+        android:id="@+id/imBtnScanRec" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/img_desc"
+        app:srcCompat="@android:drawable/btn_dialog"
+        android:layout_alignTop="@+id/imBtnScanRec"
+        android:layout_alignRight="@+id/imBtnBudget"
+        android:layout_alignEnd="@+id/imBtnBudget"
+        android:id="@+id/imBtnStoreInf" />
+
+    <TextView
+        android:text="@string/mainhub_scanrec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imBtnScanRec"
+        android:layout_alignLeft="@+id/imBtnScanRec"
+        android:layout_alignStart="@+id/imBtnScanRec"
+        android:id="@+id/lblScanRec" />
+
+    <TextView
+        android:text="@string/mainhub_storeinf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imBtnStoreInf"
+        android:layout_alignLeft="@+id/imBtnStoreInf"
+        android:layout_alignStart="@+id/imBtnStoreInf"
+        android:id="@+id/lblStoreInf" />
+
+    <TextView
+        android:text="@string/mainhub_vouchers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imBtnVouchers"
+        android:layout_alignLeft="@+id/imBtnVouchers"
+        android:layout_alignStart="@+id/imBtnVouchers"
+        android:id="@+id/lblVouchers" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/img_desc"
+        app:srcCompat="@android:drawable/btn_dialog"
+        android:layout_below="@+id/lblScanRec"
+        android:layout_alignLeft="@+id/lblScanRec"
+        android:layout_alignStart="@+id/lblScanRec"
+        android:layout_marginTop="38dp"
+        android:id="@+id/imBtnCkeys" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/img_desc"
+        app:srcCompat="@android:drawable/btn_dialog"
+        android:layout_alignTop="@+id/imBtnCkeys"
+        android:layout_alignLeft="@+id/lblStoreInf"
+        android:layout_alignStart="@+id/lblStoreInf"
+        android:id="@+id/imBtnTodo" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/img_desc"
+        app:srcCompat="@android:drawable/btn_dialog"
+        android:layout_alignTop="@+id/imBtnTodo"
+        android:layout_alignLeft="@+id/lblVouchers"
+        android:layout_alignStart="@+id/lblVouchers"
+        android:id="@+id/imBtnImpDates" />
+
+    <TextView
+        android:text="@string/mainhub_cardkey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imBtnCkeys"
+        android:layout_alignLeft="@+id/imBtnCkeys"
+        android:layout_alignStart="@+id/imBtnCkeys"
+        android:id="@+id/lblCkeys" />
+
+    <TextView
+        android:text="@string/mainhub_todo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imBtnTodo"
+        android:layout_alignLeft="@+id/imBtnTodo"
+        android:layout_alignStart="@+id/imBtnTodo"
+        android:id="@+id/lblTodo" />
+
+    <TextView
+        android:text="@string/bottomapp_txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtVpageFoot2" />
+
+    <TextView
+        android:text="@string/bottomapp_txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtVpageFoot2"
+        android:layout_alignRight="@+id/txtVpageFoot2"
+        android:layout_alignEnd="@+id/txtVpageFoot2"
+        android:id="@+id/txtVpageFoot1" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/img_desc"
+        app:srcCompat="@android:drawable/btn_dialog"
+        android:id="@+id/imBtnID"
+        android:layout_above="@+id/lblID"
+        android:layout_alignLeft="@+id/txtVsettingsClickable"
+        android:layout_alignStart="@+id/txtVsettingsClickable" />
+
+    <TextView
+        android:text="@string/mainhub_impdates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblImpDates"
+        android:layout_below="@+id/imBtnImpDates"
+        android:layout_toRightOf="@+id/txtVsecurityClickable"
+        android:layout_toEndOf="@+id/txtVsecurityClickable" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/img_desc"
+        app:srcCompat="@android:drawable/btn_dialog"
+        android:id="@+id/imBtnVouchers"
+        android:layout_above="@+id/lblStoreInf"
+        android:layout_alignRight="@+id/txtVsettingsClickable"
+        android:layout_alignEnd="@+id/txtVsettingsClickable" />
+
+    <TextView
+        android:text="@string/mainhub_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblID"
+        android:layout_below="@+id/imBtnBudget"
+        android:layout_toRightOf="@+id/txtVsecurityClickable"
+        android:layout_toEndOf="@+id/txtVsecurityClickable" />
 
 </RelativeLayout>
