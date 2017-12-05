@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.evan.iwallet">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -27,7 +29,12 @@
         <activity android:name=".SettingsActivity" />
         <activity android:name=".ScanrecActivity" />
         <activity android:name=".StoreinfoActivity" />
-        <activity android:name=".VouchersActivity"></activity>
+        <activity android:name=".VouchersActivity" />
+        <activity android:name=".CardK" />
+        <activity android:name=".TodoActivity" />
+        <activity android:name=".ImpDatesActivity">
+
+        </activity>
     </application>
 
 </manifest>

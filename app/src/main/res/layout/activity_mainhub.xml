@@ -21,7 +21,8 @@
         android:layout_toEndOf="@+id/txtVsecurityClickMh"
         android:layout_marginLeft="19dp"
         android:layout_marginStart="19dp"
-        android:id="@+id/txtVsettingsClickMh" />
+        android:id="@+id/txtVsettingsClickMh"
+        android:clickable="true" />
 
     <TextView
         android:text="@string/cardinf"
@@ -34,7 +35,8 @@
         android:id="@+id/txtVcardInfClickMh"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/imBtnProfileMh"
-        android:layout_toEndOf="@+id/imBtnProfileMh" />
+        android:layout_toEndOf="@+id/imBtnProfileMh"
+        android:clickable="true" />
 
     <TextView
         android:text="@string/security"
@@ -47,7 +49,8 @@
         android:layout_alignBaseline="@+id/txtVcardInfClickMh"
         android:layout_alignBottom="@+id/txtVcardInfClickMh"
         android:layout_toRightOf="@+id/txtVcardInfClickMh"
-        android:layout_toEndOf="@+id/txtVcardInfClickMh" />
+        android:layout_toEndOf="@+id/txtVcardInfClickMh"
+        android:clickable="true" />
 
     <TextView
         android:text="@string/userp"
