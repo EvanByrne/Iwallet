@@ -37,6 +37,7 @@
         android:text="@string/security"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#0000ff"
         android:layout_alignTop="@+id/txtVcardInfClickCar"
         android:layout_toRightOf="@+id/txtVcardInfClickCar"
         android:layout_toEndOf="@+id/txtVcardInfClickCar"
@@ -48,6 +49,7 @@
         android:text="@string/settings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#0000ff"
         android:layout_alignTop="@+id/txtVsecurityClickCar"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
@@ -75,4 +77,84 @@
         android:layout_alignRight="@+id/txtVsettingsClickCar"
         android:layout_alignEnd="@+id/txtVsettingsClickCar"
         android:layout_alignBottom="@+id/txtVprofCar" />
+
+    <TextView
+        android:text="@string/cardi_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVprofCar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp"
+        android:id="@+id/txtVcardInf1" />
+
+    <TextView
+        android:text="@string/cardi_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtVcardInf1"
+        android:layout_alignLeft="@+id/btnReturnCar"
+        android:layout_alignStart="@+id/btnReturnCar"
+        android:id="@+id/txtVcardInfCardNo" />
+
+    <TextView
+        android:text="@string/cardi_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVcardInf1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp"
+        android:id="@+id/txtVcardInf2" />
+
+    <TextView
+        android:text="@string/cardi_exp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtVcardInf2"
+        android:layout_alignLeft="@+id/txtVcardInfCardNo"
+        android:layout_alignStart="@+id/txtVcardInfCardNo"
+        android:id="@+id/txtVcrdInfExpD" />
+
+    <TextView
+        android:text="@string/cardi_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/txtVcardInf3" />
+
+    <TextView
+        android:text="@string/cardi_ccv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtVcardInf3"
+        android:layout_alignLeft="@+id/txtVcrdInfExpD"
+        android:layout_alignStart="@+id/txtVcrdInfExpD"
+        android:id="@+id/txtVcrdInfCcv" />
+
+    <Button
+        android:text="@string/cardi_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVcrdInfCcv"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnCardInfAdd" />
+
+    <TextView
+        android:text="@string/bottomapp_txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtVcardInfFoot2" />
+
+    <TextView
+        android:text="@string/bottomapp_txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtVcardInfFoot2"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtVcardInfFoot1" />
 </RelativeLayout>

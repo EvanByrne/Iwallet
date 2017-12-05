@@ -25,6 +25,7 @@
         android:text="@string/cardinf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#0000ff"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/imBtnProfileSt"
         android:layout_toEndOf="@+id/imBtnProfileSt"
@@ -37,6 +38,7 @@
         android:text="@string/security"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#0000ff"
         android:layout_alignTop="@+id/txtVcardInfClickPr"
         android:layout_toRightOf="@+id/txtVcardInfClickPr"
         android:layout_toEndOf="@+id/txtVcardInfClickPr"
@@ -48,6 +50,7 @@
         android:text="@string/settings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#0000ff"
         android:layout_alignTop="@+id/txtVsecurityClickPr"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
@@ -57,6 +60,7 @@
 
     <TextView
         android:text="@string/userp"
+        android:textColor="#00ff00"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imBtnProfileSt"
@@ -74,4 +78,123 @@
         android:id="@+id/btnReturnPr"
         android:layout_alignRight="@+id/txtVsettingsClickPr"
         android:layout_alignEnd="@+id/txtVsettingsClickPr" />
+
+    <TextView
+        android:text="@string/prof_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVprofPr"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp"
+        android:id="@+id/txtVprofInfo1" />
+
+    <TextView
+        android:text="@string/prof_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtVprofInfo1"
+        android:layout_alignLeft="@+id/btnReturnPr"
+        android:layout_alignStart="@+id/btnReturnPr"
+        android:id="@+id/txtVprofInfo2" />
+
+    <TextView
+        android:text="@string/prof_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVprofInfo1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp"
+        android:id="@+id/txtVprofInfo3" />
+
+    <TextView
+        android:text="@string/prof_text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtVprofInfo3"
+        android:layout_alignLeft="@+id/txtVprofInfo2"
+        android:layout_alignStart="@+id/txtVprofInfo2"
+        android:id="@+id/txtVprofInfo4" />
+
+    <TextView
+        android:text="@string/prof_text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtVprofInfo5"
+        android:layout_alignLeft="@+id/txtVprofInfo4"
+        android:layout_alignStart="@+id/txtVprofInfo4"
+        android:id="@+id/txtVprofInfo6" />
+
+    <TextView
+        android:text="@string/prof_text8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtVprofInfo7"
+        android:layout_alignLeft="@+id/txtVprofInfo6"
+        android:layout_alignStart="@+id/txtVprofInfo6"
+        android:id="@+id/txtVprofInfo8" />
+
+    <TextView
+        android:text="@string/prof_text7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtVprofInfo7"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/prof_text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtVprofInfo5"
+        android:layout_above="@+id/txtVprofInfo7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="23dp" />
+
+    <Button
+        android:text="@string/prof_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVprofInfo8"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnProfEditInf" />
+
+    <Button
+        android:text="@string/prof_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imVprofPic"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnProfChangePic" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:contentDescription="@string/img_desc"
+        android:layout_marginTop="21dp"
+        android:id="@+id/imVprofPic"
+        android:layout_below="@+id/btnProfEditInf"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/bottomapp_txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtVprofFoot2" />
+
+    <TextView
+        android:text="@string/bottomapp_txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtVprofFoot2"
+        android:layout_alignRight="@+id/txtVprofFoot2"
+        android:layout_alignEnd="@+id/txtVprofFoot2"
+        android:id="@+id/txtVprofFoot1" />
+
 </RelativeLayout>

@@ -25,6 +25,7 @@
         android:text="@string/cardinf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#0000ff"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/imBtnProfileSet"
         android:layout_toEndOf="@+id/imBtnProfileSet"
@@ -38,6 +39,7 @@
         android:text="@string/security"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#0000ff"
         android:layout_alignTop="@+id/txtVcardInfClickSet"
         android:layout_toRightOf="@+id/txtVcardInfClickSet"
         android:layout_toEndOf="@+id/txtVcardInfClickSet"
@@ -77,4 +79,87 @@
         android:id="@+id/btnReturnSet"
         android:layout_alignRight="@+id/txtVsettingsClickSet"
         android:layout_alignEnd="@+id/txtVsettingsClickSet" />
+
+    <TextView
+        android:text="@string/setting_autolog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVprofSet"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp"
+        android:id="@+id/txtVsetOpt1" />
+
+    <TextView
+        android:text="@string/setting_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVsetOpt1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="67dp"
+        android:id="@+id/txtVsetOpt2" />
+
+    <Button
+        android:text="@string/setting_button_lang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtVsetOpt2"
+        android:layout_alignLeft="@+id/btnSetopt1"
+        android:layout_alignStart="@+id/btnSetopt1"
+        android:id="@+id/btnSetOpt2" />
+
+    <TextView
+        android:text="@string/setting_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVsetOpt2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="63dp"
+        android:id="@+id/txtVsetOpt3" />
+
+    <Button
+        android:text="@string/setting_button_backg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtVsetOpt3"
+        android:layout_alignLeft="@+id/btnSetOpt2"
+        android:layout_alignStart="@+id/btnSetOpt2"
+        android:id="@+id/btnSetOpt3" />
+
+    <Button
+        android:text="@string/setting_button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSetOpt3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:id="@+id/btnSetSaveCha" />
+
+    <TextView
+        android:text="@string/bottomapp_txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtVsetFoot2" />
+
+    <TextView
+        android:text="@string/bottomapp_txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtVsetFoot2"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtVsetFoot1" />
+
+    <Button
+        android:text="@string/setting_button_autl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSetopt1"
+        android:layout_alignBottom="@+id/txtVsetOpt1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
 </RelativeLayout>
