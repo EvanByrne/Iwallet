@@ -69,4 +69,21 @@
     <string name="setting_button_autl">Select Auto logout time</string>
     <string name="setting_button_save">Save Changes</string>
     <string name="setting_language">Select Language</string>
+    <string name="reg_text1">Name:</string>
+    <string name="reg_text2">DOB:</string>
+    <string name="reg_text3">Location:</string>
+    <string name="reg_text4">Card Number</string>
+    <string name="reg_text5">Card Expiry</string>
+    <string name="reg_text6">Card CCV</string>
+    <string name="reg_text7">Password</string>
+    <string name="reg_text8">Confirm Pass</string>
+    <string name="reg_inp1">Jim Tom</string>
+    <string name="reg_inp2">09/09/59</string>
+    <string name="reg_inp3">Ireland</string>
+    <string name="reg_inp4">231564897</string>
+    <string name="reg_inp5">05/20</string>
+    <string name="reg_inp6">626</string>
+    <string name="reg_inp7">**********</string>
+    <string name="reg_inp8">**********</string>
+    <string name="reg_text">Please Fill out all Details</string>
 </resources>

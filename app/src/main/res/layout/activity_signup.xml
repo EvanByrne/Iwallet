@@ -149,6 +149,7 @@
         android:id="@+id/tVmsg4"
         android:layout_marginBottom="35dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:clickable="true" />
 
 </RelativeLayout>

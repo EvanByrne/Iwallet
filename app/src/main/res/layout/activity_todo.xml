@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_todo"
     android:layout_width="match_parent"
@@ -10,4 +11,71 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.evan.iwallet.TodoActivity">
 
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/img_desc"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imBtnProfTod" />
+
+    <TextView
+        android:text="@string/cardinf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0000ff"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imBtnProfTod"
+        android:layout_toEndOf="@+id/imBtnProfTod"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="14dp"
+        android:id="@+id/txtVcardInfClickTod" />
+
+    <TextView
+        android:text="@string/security"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0000ff"
+        android:layout_alignTop="@+id/txtVcardInfClickTod"
+        android:layout_toRightOf="@+id/txtVcardInfClickTod"
+        android:layout_toEndOf="@+id/txtVcardInfClickTod"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:id="@+id/txtVsecurityClickTod" />
+
+    <TextView
+        android:text="@string/userp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imBtnProfTod"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/txtVprofTod" />
+
+    <Button
+        android:text="@string/button_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtVprofTod"
+        android:layout_alignLeft="@+id/txtVcardInfClickTod"
+        android:layout_alignStart="@+id/txtVcardInfClickTod"
+        android:id="@+id/btnReturnTod"
+        android:layout_alignRight="@+id/txtVsettingsClickTod"
+        android:layout_alignEnd="@+id/txtVsettingsClickTod" />
+
+    <TextView
+        android:text="@string/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0000ff"
+        android:id="@+id/txtVsettingsClickTod"
+        android:layout_alignBaseline="@+id/txtVsecurityClickTod"
+        android:layout_alignBottom="@+id/txtVsecurityClickTod"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="29dp"
+        android:layout_marginEnd="29dp" />
 </RelativeLayout>
