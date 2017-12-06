@@ -22,7 +22,7 @@ public class SettingsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent();
                 i.setClass(getApplicationContext(), CardinfoActivity.class);
-                startActivity(i);
+                startActivity(i);//
                 finish();
             }
         });
