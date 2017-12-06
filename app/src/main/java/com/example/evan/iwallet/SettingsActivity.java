@@ -8,8 +8,8 @@ import android.widget.TextView;
 
 public class SettingsActivity extends AppCompatActivity {
 
-    private TextView setSecurity;
-    private TextView setCardInf;
+    private TextView setSecurity;//Some Comment
+    private TextView setCardInf;// Some Comment
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +22,7 @@ public class SettingsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent();
                 i.setClass(getApplicationContext(), CardinfoActivity.class);
-                startActivity(i);//
+                startActivity(i);
                 finish();
             }
         });
