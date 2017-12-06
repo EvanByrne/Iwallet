@@ -19,9 +19,9 @@ public class MainhubActivity extends AppCompatActivity {
     private ImageButton imageBTN8;
     private ImageButton imageBTN9;
     private ImageButton imageBTN10;
-    private TextView txtVcInf;
-    private TextView txtVsec;
-    private TextView txtVset;
+    private TextView mhSecurity;
+    private TextView mhSettings;
+    private TextView mhCardInf;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -133,6 +133,39 @@ public class MainhubActivity extends AppCompatActivity {
             public void onClick(View view){
                 Intent i = new Intent();
                 i.setClass(getApplicationContext(), ProfileActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
+
+        mhCardInf = (TextView)findViewById(R.id.txtVcardInfClickMh);
+        mhCardInf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent();
+                i.setClass(getApplicationContext(), CardinfoActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
+
+        mhSecurity = (TextView)findViewById(R.id.txtVsecurityClickMh);
+        mhSecurity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent();
+                i.setClass(getApplicationContext(), SecurityActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
+
+        mhSettings = (TextView)findViewById(R.id.txtVsettingsClickMh);
+        mhSettings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent();
+                i.setClass(getApplicationContext(), SettingsActivity.class);
                 startActivity(i);
                 finish();
             }
