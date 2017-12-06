@@ -15,7 +15,7 @@ public class RegformActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_regform);
 
-        buttonSignUreg = (Button)findViewById(R.id.btnSubmit);
+        buttonSignUreg = (Button)findViewById(R.id.btnSubmitReg);
         buttonSignUreg.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
